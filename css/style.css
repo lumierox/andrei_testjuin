@@ -1,0 +1,42 @@
+nav ul li {
+    border:solid 1px white;
+    background-color:lightgray;
+    float:left;
+    width:100px;
+    margin: 2px;
+}
+nav ul li ul{
+    display: none;
+}
+
+nav ul li ul li{
+    float: left;
+}
+
+nav ul li:hover  ul{
+    display: inline-block;
+}
+nav a {
+    width: 100px;
+    display: inline-block;
+    background-color:lightgray;
+    text-decoration:none; 
+    color: black;
+    
+}
+
+nav a:hover{
+    background-color:lightblue;
+}
+
+.header{
+    width:800px;
+    height:100px;
+    border:solid 1px;
+    padding:50px;
+    margin:auto;
+}
+
+h1{
+    margin-bottom: 50px;
+}
