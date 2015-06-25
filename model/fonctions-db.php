@@ -20,7 +20,7 @@
             }
         }
         else{
-            return $query;
+            return $query.  mysqli_error($db);
         }
     }
 
@@ -50,7 +50,7 @@
     function delete($table, $condition){
 
         global $db;
-        $query = "DELETE FROM $table WHERE $condition";
+        $query = "DELETE FROM $table $condition";
         //var_dump($query); //TEST QUERRY
         if(mysqli_query($db,$query)){
             return 'Suppression réussie';

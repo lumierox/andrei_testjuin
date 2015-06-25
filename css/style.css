@@ -1,23 +1,22 @@
-nav ul li {
-    border:solid 1px white;
-    background-color:lightgray;
-    float:left;
-    width:100px;
-    margin: 2px;
-}
-nav ul li ul{
+.header nav ul ul {
     display: none;
+    position: absolute;
+    left: 0px;
+    top: 18px;
+}
+.header nav li {
+    list-style-type: none;
+    position: relative;
+    width: 110px;
+    background-color: #E0E0E0;
+    float:left
+}
+.header nav li:hover ul{
+    display: block;
 }
 
-nav ul li ul li{
-    float: left;
-}
-
-nav ul li:hover  ul{
-    display: inline-block;
-}
-nav a {
-    width: 100px;
+.header nav a {
+    width: 110px;
     display: inline-block;
     background-color:lightgray;
     text-decoration:none; 
@@ -25,18 +24,56 @@ nav a {
     
 }
 
-nav a:hover{
+.header nav a:hover{
     background-color:lightblue;
 }
 
-.header{
+.header,.footer{
     width:800px;
-    height:100px;
+    height:75px;
     border:solid 1px;
     padding:50px;
     margin:auto;
 }
 
-h1{
-    margin-bottom: 50px;
+.header h1{
+    margin-bottom: 40px;
+}
+
+.header h2{
+    margin-top:10px;
+}
+
+.header form, .deco{
+    float:right;
+}
+
+.header input{
+    margin:1px;
+}
+
+.content{
+    min-height:500px;
+    width:800px;
+    border:solid 1px;
+    padding:50px;
+    margin:auto;
+}
+
+.image{
+    display:inline-block;
+    border: solid 1px;
+    margin:2px;
+    padding:3px;
+    width:150px;
+    word-wrap: break-word;
+}
+
+img[name='Supprimer'], img[name='Modifier']{
+    width:30px;
+    height:30px;
+}
+
+.message{
+    border:solid 1px;
 }

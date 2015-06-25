@@ -47,3 +47,15 @@ function envoye_ajax(value,table,colonne,condition){
     }
     return (!reponse)? 'ko' :reponse;
 }
+
+//DELETE
+$('img[name="Supprimer"]').click(function(){
+    if(confirm('Voulez vous vraiment supprimer l\'image: '+$(this).data('title')+' ?')){
+        document.location="?menu=espace-client&delete="+$(this).data('image_id')+"&id="+$(this).data('user_id')+"&name="+$(this).data('name');
+    }
+});
+
+//UPDATE
+$('img[name="Modifier"]').click(function(){
+    
+});

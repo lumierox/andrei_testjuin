@@ -92,7 +92,7 @@ INSERT INTO `rubric` (`id`, `title`) VALUES
 (5, 'Paysages'),
 (6, 'Sports'),
 (7, 'Technologies'),
-(8, 'Trasnports'),
+(8, 'Transports'),
 (9, 'Divers');
 
 -- --------------------------------------------------------

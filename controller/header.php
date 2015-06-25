@@ -4,7 +4,7 @@
         $user=$_POST['user'];
         $password=$_POST['password'];
         if(!is_string($req=select("user as u", 
-                                    "u.login, u.password, u.name, p.name as perm_name, u.permit_id", 
+                                    "u.id, u.login, u.password, u.name, p.name as perm_name, u.permit_id", 
                                     "INNER JOIN permit as p ON u.permit_id = p.id
                                      WHERE login='$user' AND password='$password'")))
         {
