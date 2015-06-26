@@ -76,4 +76,39 @@ img[name='Supprimer'], img[name='Modifier']{
 
 .message{
     border:solid 1px;
+    min-width: 350px;
+    min-height: 20px;
+    display:block;
+}
+
+div#images_affiche form{
+    display:none;
+    width:170px;
+    border:solid 1px;
+}
+
+img.grande{
+    position: absolute;
+    top:50px;
+    left:100px;
+    margin:auto;
+    border:solid 1px;
+}
+
+#form_contact{
+    width:400px;
+    margin:auto;
+}
+
+#form_contact textarea{
+    width:350px;
+    height:200px;
+}
+
+#compteur{
+    border:solid 1px;
+    min-width: 350px;
+    min-height: 20px;
+    display:block;
+    text-align: center;
 }

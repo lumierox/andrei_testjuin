@@ -3,7 +3,7 @@
         Télépro-photos.fr
         <?php 
             if(isset($_GET['menu'])){
-                print ' - '.ucfirst($_GET['menu']);
+                print isset($_GET['a'])? (($_GET['a']==1)?' - Administration' : ' - Moderation') :' - '.ucfirst($_GET['menu']);
             }
         ?>
     </h1>
@@ -22,7 +22,8 @@
             </li>
             <li><a href="?menu=contact">Nous Contacter</a></li>
             <li><a href="?menu=espace-client">Espace Client</a></li>
-
+            <?php print (isset($_SESSION['login'])&&$_SESSION['permit_id']==1)?' <li><a href="?menu=espace-client&a=1">Administration</a></li>':'';
+                  print (isset($_SESSION['login'])&&$_SESSION['permit_id']==2)?' <li><a href="?menu=espace-client&a=0">Modération</a></li>':''?>
 
         </ul>
         

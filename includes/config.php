@@ -26,3 +26,5 @@ $mini_qualite = 70;
 $formats_acceptes = array('jpg','jpeg','png');
 
 $rubric_table;
+
+$nombre_images_page = 20;
